@@ -13,7 +13,7 @@ const HeroSection = ({ onOpenModal }: HeroSectionProps) => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center max-lg:flex-col">
           <div>
-            <h1 className="font-semibold text-white leading-[82px] text-[72px] max-w-[880px] max-lg:text-[48px] max-lg:leading-normal max-lg:max-w-full max-sm:text-4xl">
+            <h1 className="font-semibold text-white leading-[82px] text-[72px] max-w-[880px] max-lg:text-[48px] max-lg:leading-normal max-lg:max-w-none max-sm:text-4xl">
               РАЗРАБОТКА САЙТОВ
             </h1>
             <p className="my-[24px] font-base text-[24px] text-[#E2E2E2] max-w-[637px] leading-[36px] max-lg:leading-normal max-lg:max-w-full max-lg:text-base">
