@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+.services-shadow {
+  box-shadow: inset 2.01px -2.01px 20px rgba(214, 214, 214, 0.17),
+    inset -3.01px 3.01px 3.01px rgba(255, 255, 255, 0.39);
+}
+
+.portfolio-gradient-border {
+  position: relative;
+  background: linear-gradient(
+    180deg,
+    #3a81bf14 0%,
+    #41305a14 100%
+  ); /* или любой другой фон, который вам нужен */
+  backdrop-filter: blur(1000px);
+  /* Для поддержки в Safari */
+  -webkit-backdrop-filter: blur(1000px);
+  border-radius: 35px; /* настройте по необходимости */
+  padding: 30px; /* настройте по необходимости */
+}
+
+.portfolio-gradient-border::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 35px; /* должен совпадать с border-radius родителя */
+  padding: 1px; /* толщина border */
+  background: linear-gradient(
+    180deg,
+    #f8327f 0%,
+    #7b7fea00,
+    #7b7fea00,
+    #1882de 100%
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
