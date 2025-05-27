@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const PortfolioSection = () => {
@@ -14,14 +15,18 @@ const PortfolioSection = () => {
             <div className="portfolio-gradient-border w-[623px] text-[24px] text-white font-bold max-lg:text-[20px] max-sm:text-[18px] max-sm:w-full">
               <h3>Лендинг diaz-art.com</h3>
               <div className="relative w-full h-[336px] max-sm:h-[200px]">
-                <img
+                <Image
                   src="/Безымянный-front.png"
-                  className="absolute top-0 max-w-full max-h-full"
+                  width={516}
+                  height={336}
+                  className="absolute top-0 w-auto h-full object-cover"
                   alt=""
                 />
-                <img
+                <Image
                   src="/Безымянный-portrait.png"
-                  className="absolute bottom-0 right-0 max-w-full h-[289px] max-sm:h-full"
+                  width={146}
+                  height={289}
+                  className="absolute bottom-0 right-0 h-[289px] max-sm:w-auto max-sm:h-full max-sm:object-cover"
                   alt=""
                 />
               </div>
@@ -48,14 +53,18 @@ const PortfolioSection = () => {
             <div className="portfolio-gradient-border w-[623px] text-[24px] text-white font-bold max-lg:text-[20px] max-sm:text-[18px] max-sm:w-full">
               <h3>TypeWeather App</h3>
               <div className="relative w-full h-[336px] max-sm:h-[200px]">
-                <img
+                <Image
                   src="/Безымянный2-front.png"
-                  className="absolute top-0 max-w-full max-h-full"
+                  width={516}
+                  height={336}
+                  className="absolute top-0 w-auto h-full object-cover"
                   alt=""
                 />
-                <img
+                <Image
                   src="/Безымянный2-portrait.png"
-                  className="absolute bottom-0 right-0 max-w-full h-[289px] max-sm:h-full"
+                  width={146}
+                  height={289}
+                  className="absolute bottom-0 right-0 h-[289px] max-sm:w-auto max-sm:h-full max-sm:object-cover"
                   alt=""
                 />
               </div>
@@ -79,14 +88,18 @@ const PortfolioSection = () => {
             <div className="portfolio-gradient-border w-[623px] text-[24px] text-white font-bold max-lg:text-[20px] max-sm:text-[18px] max-sm:w-full">
               <h3>Лендинг CarMusc</h3>
               <div className="relative w-full h-[336px] max-sm:h-[200px]">
-                <img
+                <Image
                   src="/Безымянный3-front.png"
-                  className="absolute top-0 max-w-full max-h-full"
+                  width={516}
+                  height={336}
+                  className="absolute top-0 w-auto h-full object-cover"
                   alt=""
                 />
-                <img
+                <Image
                   src="/Безымянный3-portrait.png"
-                  className="absolute bottom-0 right-0 max-w-full h-[289px] max-sm:h-full"
+                  width={146}
+                  height={289}
+                  className="absolute bottom-0 right-0 h-[289px] max-sm:w-auto max-sm:h-full max-sm:object-cover"
                   alt=""
                 />
               </div>
@@ -110,14 +123,18 @@ const PortfolioSection = () => {
             <div className="portfolio-gradient-border w-[623px] text-[24px] text-white font-bold max-lg:text-[20px] max-sm:text-[18px] max-sm:w-full">
               <h3>Лендинг TeaLuxe</h3>
               <div className="relative w-full h-[336px] max-sm:h-[200px]">
-                <img
+                <Image
                   src="/Безымянный4-front.png"
-                  className="absolute top-0 max-w-full max-h-full"
+                  width={516}
+                  height={336}
+                  className="absolute top-0 w-auto h-full object-cover"
                   alt=""
                 />
-                <img
+                <Image
                   src="/Безымянный4-portrait.png"
-                  className="absolute bottom-0 right-0 max-w-full h-[289px] max-sm:h-full"
+                  width={146}
+                  height={289}
+                  className="absolute bottom-0 right-0 h-[289px] max-sm:w-auto max-sm:h-full max-sm:object-cover"
                   alt=""
                 />
               </div>

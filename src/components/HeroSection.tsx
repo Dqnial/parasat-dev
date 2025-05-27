@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 type HeroSectionProps = {
@@ -44,7 +45,13 @@ const HeroSection = ({ onOpenModal }: HeroSectionProps) => {
             </div>
           </div>
           <div className="relative max-lg:hidden">
-            <img src="/image 2.png" alt="" className="relative z-10" />
+            <Image
+              width={446}
+              height={446}
+              src="/image 2.png"
+              alt=""
+              className="relative z-10"
+            />
             <div className="absolute inset-0 z-0 rounded-full bg-[#FB37FF] blur-[96px] opacity-60"></div>
           </div>
         </div>
