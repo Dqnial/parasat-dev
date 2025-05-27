@@ -18,9 +18,39 @@ const OurServices = ({ onOpenModal }: OurServicesProps) => {
                 Лендинг-пейдж
               </h3>
               <p className="mt-[15px] text-[#E2E2E2] text-[18px] max-lg:text-base">
-                Одностраничный сайт для быстрой презентации продукта или услуги.
-                Работает даже без отзывов и портфолио — главное, чтобы вы
-                начали.
+                Одностраничный сайт для эффективного представления вашего
+                продукта или услуги. Идеален для старта, даже без портфолио и
+                отзывов он поможет привлечь первых клиентов.
+              </p>
+            </div>
+
+            <div className="flex items-end justify-between max-md:mt-[24px] max-sm:flex-col max-sm:items-center max-sm:text-center max-sm:gap-[8px]">
+              <a
+                onClick={(e) => {
+                  e.preventDefault();
+                  onOpenModal();
+                }}
+                className="cursor-pointer py-[12px] px-[52px] rounded-[16px] leading-[36px] font-semibold text-white text-xl
+             bg-gradient-to-r from-[#9B51E0] to-[#3081ED]
+             hover:brightness-110 hover:shadow-lg transition-all duration-300 max-lg:py-[6px] max-lg:px-[32px] max-sm:w-full"
+              >
+                Заказать
+              </a>
+
+              <span className="text-[#E2E2E2] text-[20px] max-lg:text-base">
+                от 7 дней
+              </span>
+            </div>
+          </div>
+          <div className="bg-[#ffffff08] p-[30px] rounded-[32px] w-[47%] h-[320px] flex flex-col justify-between max-lg:w-full max-md:h-auto max-sm:p-[16px] max-sm:rounded-xl">
+            <div>
+              <h3 className="text-white font-bold text-[24px] max-lg:text-[18px]">
+                Корпоративный сайт
+              </h3>
+              <p className="mt-[15px] text-[#E2E2E2] text-[18px] max-lg:text-base">
+                Многостраничный сайт с продуманной структурой, который подробно
+                рассказывает о вашей компании, демонстрирует услуги и формирует
+                доверие к бренду.
               </p>
             </div>
 
@@ -45,12 +75,12 @@ const OurServices = ({ onOpenModal }: OurServicesProps) => {
           <div className="bg-[#ffffff08] p-[30px] rounded-[32px] w-[47%] h-[320px] flex flex-col justify-between max-lg:w-full max-md:h-auto max-sm:p-[16px] max-sm:rounded-xl">
             <div>
               <h3 className="text-white font-bold text-[24px] max-lg:text-[18px]">
-                Лендинг-пейдж
+                Интернет-магазин
               </h3>
               <p className="mt-[15px] text-[#E2E2E2] text-[18px] max-lg:text-base">
-                Одностраничный сайт для быстрой презентации продукта или услуги.
-                Работает даже без отзывов и портфолио — главное, чтобы вы
-                начали.
+                Полноценная система онлайн-продаж с удобным каталогом,
+                фильтрами, оплатой и интеграцией нужных сервисов. Всё, чтобы ваш
+                бизнес работал и продавал 24/7.
               </p>
             </div>
 
@@ -68,19 +98,19 @@ const OurServices = ({ onOpenModal }: OurServicesProps) => {
               </a>
 
               <span className="text-[#E2E2E2] text-[20px] max-lg:text-base">
-                от 10 дней
+                от 20 дней
               </span>
             </div>
           </div>
           <div className="bg-[#ffffff08] p-[30px] rounded-[32px] w-[47%] h-[320px] flex flex-col justify-between max-lg:w-full max-md:h-auto max-sm:p-[16px] max-sm:rounded-xl">
             <div>
               <h3 className="text-white font-bold text-[24px] max-lg:text-[18px]">
-                Лендинг-пейдж
+                Сайт-портфолио
               </h3>
               <p className="mt-[15px] text-[#E2E2E2] text-[18px] max-lg:text-base">
-                Одностраничный сайт для быстрой презентации продукта или услуги.
-                Работает даже без отзывов и портфолио — главное, чтобы вы
-                начали.
+                Персональный сайт для демонстрации ваших проектов, кейсов и
+                достижений. Помогает заявить о себе и вызывать доверие у
+                клиентов с первого экрана.
               </p>
             </div>
 
@@ -98,37 +128,7 @@ const OurServices = ({ onOpenModal }: OurServicesProps) => {
               </a>
 
               <span className="text-[#E2E2E2] text-[20px] max-lg:text-base">
-                от 10 дней
-              </span>
-            </div>
-          </div>
-          <div className="bg-[#ffffff08] p-[30px] rounded-[32px] w-[47%] h-[320px] flex flex-col justify-between max-lg:w-full max-md:h-auto max-sm:p-[16px] max-sm:rounded-xl">
-            <div>
-              <h3 className="text-white font-bold text-[24px] max-lg:text-[18px]">
-                Лендинг-пейдж
-              </h3>
-              <p className="mt-[15px] text-[#E2E2E2] text-[18px] max-lg:text-base">
-                Одностраничный сайт для быстрой презентации продукта или услуги.
-                Работает даже без отзывов и портфолио — главное, чтобы вы
-                начали.
-              </p>
-            </div>
-
-            <div className="flex items-end justify-between max-md:mt-[24px] max-sm:flex-col max-sm:items-center max-sm:text-center max-sm:gap-[8px]">
-              <a
-                onClick={(e) => {
-                  e.preventDefault();
-                  onOpenModal();
-                }}
-                className="cursor-pointer py-[12px] px-[52px] rounded-[16px] leading-[36px] font-semibold text-white text-xl
-             bg-gradient-to-r from-[#9B51E0] to-[#3081ED]
-             hover:brightness-110 hover:shadow-lg transition-all duration-300 max-lg:py-[6px] max-lg:px-[32px] max-sm:w-full"
-              >
-                Заказать
-              </a>
-
-              <span className="text-[#E2E2E2] text-[20px] max-lg:text-base">
-                от 10 дней
+                от 7 дней
               </span>
             </div>
           </div>
@@ -137,7 +137,7 @@ const OurServices = ({ onOpenModal }: OurServicesProps) => {
           <h2 className="font-bold text-white text-[48px] text-center mb-[32px] max-lg:text-4xl max-lg:leading-normal max-sm:text-3xl">
             Что входит в наши услуги
           </h2>
-          <div className="flex justify-center gap-[120px] flex-wrap relative">
+          <div className="flex justify-center gap-[120px] flex-wrap relative max-sm:gap-[60px]">
             <div className="absolute bottom-0 w-full h-[53px] bg-gradient-to-r from-[#9B51E0] to-[#3081ED] blur-[96px] max-sm:w-[53px] max-sm:h-full"></div>
             <div>
               <div className="bg-[#ffffff18] w-[150px] h-[138px] mx-auto rounded-[26px] backdrop-blur-[70px] services-shadow flex items-center justify-center">

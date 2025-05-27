@@ -9,6 +9,7 @@ import { PortfolioSection } from "@/components/PortfolioSection";
 import { useState } from "react";
 import { Header } from "./Header";
 import { Footer } from "./Footer";
+import { Toaster } from "react-hot-toast";
 
 function HomeClient() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -17,6 +18,7 @@ function HomeClient() {
     <>
       <Header onOpenModal={() => setIsModalOpen(true)} />
       <main>
+        <Toaster position="top-center" />
         {/* Модальное окно */}
         <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
         {/* HERO SECTION */}
