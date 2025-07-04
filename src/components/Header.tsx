@@ -79,6 +79,12 @@ const Header = ({ onOpenModal }: HeaderProps) => {
           <a
             onClick={(e) => {
               e.preventDefault();
+              if (
+                typeof window !== "undefined" &&
+                typeof window.gtagSendEvent === "function"
+              ) {
+                window.gtagSendEvent(null);
+              }
               onOpenModal();
             }}
             className="cursor-pointer py-[5px] px-[22.5px] rounded-[16px] leading-[36px] font-bold text-white text-base

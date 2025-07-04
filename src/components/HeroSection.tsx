@@ -25,11 +25,17 @@ const HeroSection = ({ onOpenModal }: HeroSectionProps) => {
               <a
                 onClick={(e) => {
                   e.preventDefault();
+                  if (
+                    typeof window !== "undefined" &&
+                    typeof window.gtagSendEvent === "function"
+                  ) {
+                    window.gtagSendEvent(null);
+                  }
                   onOpenModal();
                 }}
                 className="cursor-pointer py-[12px] px-[29px] rounded-[16px] leading-[36px] font-semibold text-white text-[24px]
-             bg-gradient-to-r from-[#9B51E0] to-[#3081ED]
-             hover:brightness-110 hover:shadow-lg transition-all duration-300 max-sm:text-xl max-sm:py-2"
+ bg-gradient-to-r from-[#9B51E0] to-[#3081ED]
+ hover:brightness-110 hover:shadow-lg transition-all duration-300 max-sm:text-xl max-sm:py-2"
               >
                 Оставить заявку
               </a>

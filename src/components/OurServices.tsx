@@ -28,6 +28,12 @@ const OurServices = ({ onOpenModal }: OurServicesProps) => {
               <a
                 onClick={(e) => {
                   e.preventDefault();
+                  if (
+                    typeof window !== "undefined" &&
+                    typeof window.gtagSendEvent === "function"
+                  ) {
+                    window.gtagSendEvent(null);
+                  }
                   onOpenModal();
                 }}
                 className="cursor-pointer py-[12px] px-[52px] rounded-[16px] leading-[36px] font-semibold text-white text-xl
@@ -58,6 +64,12 @@ const OurServices = ({ onOpenModal }: OurServicesProps) => {
               <a
                 onClick={(e) => {
                   e.preventDefault();
+                  if (
+                    typeof window !== "undefined" &&
+                    typeof window.gtagSendEvent === "function"
+                  ) {
+                    window.gtagSendEvent(null);
+                  }
                   onOpenModal();
                 }}
                 className="cursor-pointer py-[12px] px-[52px] rounded-[16px] leading-[36px] font-semibold text-white text-xl
@@ -88,6 +100,12 @@ const OurServices = ({ onOpenModal }: OurServicesProps) => {
               <a
                 onClick={(e) => {
                   e.preventDefault();
+                  if (
+                    typeof window !== "undefined" &&
+                    typeof window.gtagSendEvent === "function"
+                  ) {
+                    window.gtagSendEvent(null);
+                  }
                   onOpenModal();
                 }}
                 className="cursor-pointer py-[12px] px-[52px] rounded-[16px] leading-[36px] font-semibold text-white text-xl
@@ -118,6 +136,12 @@ const OurServices = ({ onOpenModal }: OurServicesProps) => {
               <a
                 onClick={(e) => {
                   e.preventDefault();
+                  if (
+                    typeof window !== "undefined" &&
+                    typeof window.gtagSendEvent === "function"
+                  ) {
+                    window.gtagSendEvent(null);
+                  }
                   onOpenModal();
                 }}
                 className="cursor-pointer py-[12px] px-[52px] rounded-[16px] leading-[36px] font-semibold text-white text-xl

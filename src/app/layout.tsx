@@ -3,6 +3,12 @@ import "./globals.css";
 import { Poppins } from "next/font/google";
 import Script from "next/script";
 
+declare global {
+  interface Window {
+    gtagSendEvent: (url: string | null) => void;
+  }
+}
+
 export const metadata: Metadata = {
   title: "Разработка сайтов в Алматы под ключ | Parasat Dev",
   description:
@@ -69,7 +75,6 @@ export default function RootLayout({
   return (
     <html lang="ru" className={poppins.className}>
       <body className="bg-[#1F1D2B]">
-        {/* Google Tag (gtag.js) */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=AW-16817762076"
           strategy="afterInteractive"
@@ -79,11 +84,31 @@ export default function RootLayout({
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'AW-16817762076');
-          `,
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-16817762076');
+    `,
+          }}
+        />
+        <Script
+          id="gtag-click-handler"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+      function gtagSendEvent(url) {
+        var callback = function () {
+          if (typeof url === 'string') {
+            window.location = url;
+          }
+        };
+        gtag('event', 'ads_conversion___1', {
+          'event_callback': callback,
+          'event_timeout': 2000
+        });
+        return false;
+      }
+    `,
           }}
         />
         {children}
