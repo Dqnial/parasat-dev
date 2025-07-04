@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Poppins } from "next/font/google";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Разработка сайтов в Алматы под ключ | Parasat Dev",
@@ -66,8 +67,27 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ru_RU" className={poppins.className}>
-      <body className="bg-[#1F1D2B]">{children}</body>
+    <html lang="ru" className={poppins.className}>
+      <body className="bg-[#1F1D2B]">
+        {/* Google Tag (gtag.js) */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-16817762076"
+          strategy="afterInteractive"
+        />
+        <Script
+          id="gtag-init"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-16817762076');
+          `,
+          }}
+        />
+        {children}
+      </body>
     </html>
   );
 }
